@@ -52,7 +52,7 @@ const birthYear = 1991;
 var job = 'programmer';
 job = 'teacher';
 */
-const now = 2037;
+/* const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
 console.log(ageJonas, ageSarah);
@@ -81,3 +81,88 @@ console.log(ageJonas > ageSarah); // >, <, >=, <==
 console.log(ageSarah >= 18);
 
 console.log(now - 1991 > now - 2018);
+*/
+/*
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(now - 1991 > now - 2018);
+
+let x, y;
+
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+const averageAge = ageJonas + ageSarah / 2;
+console.log(ageJonas, ageSarah, averageAge);
+*/
+
+// test data 1:
+
+// const markHeight = 1.69;
+// const johnHeight = 1.95;
+// const markWeight = 78;
+// const johnWeight = 92;
+
+/*const markHeight = 1.88;
+const johnHeight = 1.76;
+const markWeight = 95;
+const johnWeight = 85;
+
+
+let markBMI = markWeight / (markHeight ** 2);
+let johnBMI = johnWeight / (johnHeight ** 2);
+let bmiComparison = markBMI > johnBMI;
+
+console.log(markBMI);
+console.log(johnBMI);
+console.log(markBMI > johnBMI);
+
+console.log(markBMI, johnBMI, bmiComparison);
+*/
+
+/*const firstName = 'Jonas'
+const job = 'teacher'
+const birthYear = 1991
+const year = 2037
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+console.log(jonas)
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(jonasNew);
+
+console.log(`Just a regular string...`);
+
+console.log('String With \n\
+multiple \n\
+lines')
+
+console.log(`String
+multiple
+lines`)
+*/
+
+/*
+const age = 15;
+// const isOldEnough = age >= 18;
+
+
+if (age >= 18) {
+    console.log('Sarah can start driving!');
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah can not drive, wait another ${yearsLeft} years :`);
+}
+*/
+
+const birthYear = 1991;
+
+let century;
+
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century)
