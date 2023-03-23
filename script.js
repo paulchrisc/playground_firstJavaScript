@@ -38,7 +38,7 @@ console.log(typeof null);
 
 //reassigning / mutated the var
 
-let age = 30
+/*let age = 30
 age = 31;
 
 //always use const unless you are sure that the variable will change
@@ -51,3 +51,8 @@ const birthYear = 1991;
 
 var job = 'programmer';
 job = 'teacher';
+*/
+
+const ageJonas = 2037 - 1991;
+const ageSarah = 2037 - 2018;
+console.log(ageJonas, ageSarah);
