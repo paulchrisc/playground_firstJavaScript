@@ -156,7 +156,7 @@ if (age >= 18) {
 }
 */
 
-const birthYear = 1991;
+/*const birthYear = 1991;
 
 let century;
 
@@ -166,3 +166,166 @@ if (birthYear <= 2000) {
     century = 21;
 }
 console.log(century)
+*/
+
+/*const markHeight = 1.88;
+const johnHeight = 1.76;
+const markWeight = 95;
+const johnWeight = 85;
+
+
+let markBMI = markWeight / (markHeight ** 2);
+let johnBMI = johnWeight / (johnHeight ** 2);
+const bmiComparison = markBMI > johnBMI;
+
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})`)
+} else {
+    console.log(`John's (${johnBMI}) is higher than Mark's (${markBMI})`)
+}
+*/
+
+/*
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number(Jonas));
+console.log(typeof NaN);
+
+
+// type coercion
+
+console.log('I am ' + 23 + 'years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+*/
+
+// 5 falsy values: 0, '', undefined, null, NaN
+/*
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+
+const money = 0;
+if (money) {
+    console.log("Don't spend it all ;")
+} else {
+    console.log('You should get a job!')
+}
+
+
+let height = 0;
+if (height) {
+    console.log('Height is defined');
+} else {
+    console.log('Height is undefined');
+}
+*/
+
+// const age = 18;
+// if (age === 18) console.log("You are an adult!");
+
+//== does type coercion , === strict
+/*
+const favourite = Number(prompt("What's your favorite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+    console.log("23 is a cool number")
+} else if (favourite === 7) {
+    console.log('7 is also a cool number')
+} else {
+    console.log('number is not 7 nor 23')
+}
+*/
+
+// const hasDriverlicense = true;
+// const hasGoodVision = true;
+
+// console.log(hasDriverlicense && hasGoodVision);
+// console.log(hasDriverlicense || hasGoodVision);
+// console.log(!hasDriverlicense || hasGoodVision);
+
+// const shouldDrive = hasDriverlicense && hasGoodVision
+// // if (shouldDrive) {
+// //     console.log('Sarah can drive!')
+// // } else {
+// //     console.log('Sarah should not drive!')
+// // }
+
+// const isTired = false;
+
+// console.log(hasDriverlicense && hasGoodVision && isTired);
+
+// if (hasDriverlicense && hasGoodVision && !isTired) {
+//     console.log('Sarah can drive!')
+// } else {
+//     console.log('Sarah should not drive!')
+// }
+
+/*
+Coding Challenge #3
+There are two gymnastics teams, Dolphins and Koalas. They compete against each 
+other 3 times. The winner with the highest average score wins a trophy!
+Your tasks:
+1. Calculate the average score for each team, using the test data below
+2. Compare the team's average scores to determine the winner of the competition, 
+and print it to the console. Don't forget that there can be a draw, so test for that 
+as well (draw means they have the same average score)
+3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a 
+team only wins if it has a higher score than the other team, and the same time a 
+score of at least 100 points. Hint: Use a logical operator to test for minimum 
+score, as well as multiple else-if blocks �
+4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when 
+both teams have the same score and both have a score greater or equal 100 
+points. Otherwise, no team wins the trophy
+Test data:
+§ Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+§ Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+GOOD LUCK 
+*/
+
+/*test data 1
+const dolphinScore1 = 96
+const dolphinScore2 = 108
+const dolphinScore3 = 89
+
+const koalasScore1 = 88
+const koalasScore2 = 91
+const koalasScore3 = 110
+
+
+
+const averageKoala = (koalasScore1 + koalasScore2 + koalasScore3) / 3
+
+const averageDolphin = (dolphinScore1 + dolphinScore2 + dolphinScore3) / 3
+
+const draw = averageDolphin === averageKoala
+const drawNoWinner = draw < 100
+const winningTeam = averageDolphin > averageKoala
+console.log(winningTeam)
+
+if (winningTeam == true && averageDolphin >= 100) {
+    console.log('Dolphin wins the trophy!')
+} else if (winningTeam == false && averageKoala >= 100) {
+    console.log('Koalas wins the trophy!')
+} else if (draw && averageDolphin >= 100 && averageKoala >= 100) {
+    console.log('Both teams get the Trophy')
+} else {
+    console.log('No one Wins the Trophy')
+}*/
+
+const day = 'monday';
+
+switch (day) {
+    case 'monday':
+        console.log('Plan Course structure');
+        console.log('Go to coding meetup');
+}
