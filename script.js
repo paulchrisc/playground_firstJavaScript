@@ -271,25 +271,25 @@ if (favourite === 23) {
 
 /*
 Coding Challenge #3
-There are two gymnastics teams, Dolphins and Koalas. They compete against each 
+There are two gymnastics teams, Dolphins and Koalas. They compete against each
 other 3 times. The winner with the highest average score wins a trophy!
 Your tasks:
 1. Calculate the average score for each team, using the test data below
-2. Compare the team's average scores to determine the winner of the competition, 
-and print it to the console. Don't forget that there can be a draw, so test for that 
+2. Compare the team's average scores to determine the winner of the competition,
+and print it to the console. Don't forget that there can be a draw, so test for that
 as well (draw means they have the same average score)
-3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a 
-team only wins if it has a higher score than the other team, and the same time a 
-score of at least 100 points. Hint: Use a logical operator to test for minimum 
+3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+team only wins if it has a higher score than the other team, and the same time a
+score of at least 100 points. Hint: Use a logical operator to test for minimum
 score, as well as multiple else-if blocks �
-4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when 
-both teams have the same score and both have a score greater or equal 100 
+4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+both teams have the same score and both have a score greater or equal 100
 points. Otherwise, no team wins the trophy
 Test data:
 § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
 § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
-GOOD LUCK 
+GOOD LUCK
 */
 
 /*test data 1
@@ -322,10 +322,85 @@ if (winningTeam == true && averageDolphin >= 100) {
     console.log('No one Wins the Trophy')
 }*/
 
-const day = 'monday';
+// const day = 'thursday';
 
-switch (day) {
-    case 'monday':
-        console.log('Plan Course structure');
-        console.log('Go to coding meetup');
-}
+// switch (day) {
+//     case 'monday':
+//         console.log('Plan Course structure');
+//         console.log('Go to coding meetup');
+//         break;
+//     case 'tuesday':
+//         console.log('Prepare Theory videos');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log('Write Code examples');
+//         break;
+//     case 'friday':
+//         console.log('Record Videos');
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('Enjoy the weekend')
+//         break;
+//     default:
+//         console.log('Not a valid day!');
+// }
+
+
+// const day = 'saturday'
+
+// if (day === 'monday') {
+//     console.log('Plan Course structure');
+//     console.log('Go to coding meetup');
+// } else if (day === 'tuesday') {
+//     console.log('Prepare Theory videos');
+// } else if (day === 'wednesday' || day === 'thursday') {
+//     console.log('Write Code examples');
+// } else if (day === 'friday') {
+//     console.log('Record Videos');
+// } else if (day === 'saturday' || day === 'sunday') {
+//     console.log('Enjoy the weekend');
+// } else {
+//     console.log('Not a valid day!');
+// }
+
+// const age = 23;
+// age >= 18 ? console.log('I like to drink wine') :
+//     console.log('I like to drink water');
+
+// const age = 15
+// const drink = age >= 18 ? 'wine' : 'water';
+// console.log(drink);
+
+// console.log(`I like to drink ${drink}`)
+// console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+
+
+/* 
+Steven wants to build a very simple tip calculator for whenever he goes eating in a 
+restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 
+300. If the value is different, the tip is 20%.
+Your tasks:
+1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for 
+this. It's not allowed to use an if/else statement � (If it's easier for you, you can 
+start with an if/else statement, and then try to convert it to a ternary 
+operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value 
+(bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value 
+316.25”
+Test data:
+§ Data 1: Test for bill values 275, 40 and 430
+Hints:
+§ To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+§ Value X is between 50 and 300, if it's >= 50 && <= 300 
+*/
+
+
+
+const billValue = 30;
+const tip = billValue <= 300 && billValue >= 50 ? billValue * .15 : billValue * .20;
+
+console.log(`The bill was ${billValue}, the tip was ${tip}, and the total value is ${billValue + tip}`);
+
+console.log(tip)
